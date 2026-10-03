@@ -480,7 +480,7 @@ function calculateRadialTargets() {
   );
 
   // Wahi Pana: inner ring
-  const placeRadius = 180;
+  const placeRadius = width < 600 ? 110 : 220;
 
   connectedPlaces.forEach((node, i) => {
     const angle =
@@ -494,7 +494,7 @@ function calculateRadialTargets() {
   });
 
   // Kumu: outer ring
-  const kumuRadius = 340;
+ const kumuRadius = width < 600 ? 180 : 340;
 
   connectedKumu.forEach((node, i) => {
     const angle =
