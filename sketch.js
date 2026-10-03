@@ -715,6 +715,8 @@ function updatePhysics() {
 
 function draw() {
 
+  console.log("Canvas width:", width);
+
   background(
     BACKGROUND_COLOR
   );
