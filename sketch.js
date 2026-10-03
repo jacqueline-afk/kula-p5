@@ -1547,11 +1547,13 @@ function drawLegend() {
   );
 
 
-  circle(
-    x + 8,
-    y,
-    14
-  );
+const nodeSize = width < 600 ? 10 : 14;
+
+circle(
+  x + 8,
+  y,
+  nodeSize
+);
 
 
   fill(TEXT_COLOR);
@@ -1592,12 +1594,14 @@ function drawLegend() {
   );
 
 
-  rect(
-    0,
-    0,
-    14,
-    14
-  );
+const nodeSize = width < 600 ? 9 : 14;
+
+rect(
+  0,
+  0,
+  nodeSize,
+  nodeSize
+);
 
 
   pop();
@@ -1606,11 +1610,13 @@ function drawLegend() {
   fill(TEXT_COLOR);
 
 
-  text(
-    "Pua",
-    x + 22,
-    y + 25
-  );
+const labelOffset = width < 600 ? 15 : 22;
+
+text(
+  "Pua",
+  x + labelOffset,
+  y + 25
+);
 
 
   // --------------------------------
@@ -1625,11 +1631,13 @@ function drawLegend() {
   noStroke();
 
 
-  circle(
-    x + 8,
-    y + 50,
-    16
-  );
+ const nodeSize = width < 600 ? 11 : 16;
+
+circle(
+  x + 8,
+  y + 50,
+  nodeSize
+);
 
 
   fill(TEXT_COLOR);
