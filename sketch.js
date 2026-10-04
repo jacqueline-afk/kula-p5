@@ -480,7 +480,7 @@ function calculateRadialTargets() {
   );
 
   // Wahi Pana: inner ring
-  const placeRadius = width < 600 ? 110 : 220;
+  const placeRadius = 180;
 
   connectedPlaces.forEach((node, i) => {
     const angle =
@@ -494,7 +494,7 @@ function calculateRadialTargets() {
   });
 
   // Kumu: outer ring
- const kumuRadius = width < 600 ? 180 : 340;
+  const kumuRadius = 340;
 
   connectedKumu.forEach((node, i) => {
     const angle =
@@ -714,8 +714,6 @@ function updatePhysics() {
 // ------------------------------------------------------------
 
 function draw() {
-
-  // console.log("Canvas width:", width);
 
   background(
     BACKGROUND_COLOR
@@ -1549,13 +1547,11 @@ function drawLegend() {
   );
 
 
-const nodeSize = width < 600 ? 10 : 14;
-
-circle(
-  x + 8,
-  y,
-  nodeSize
-);
+  circle(
+    x + 8,
+    y,
+    14
+  );
 
 
   fill(TEXT_COLOR);
@@ -1596,14 +1592,12 @@ circle(
   );
 
 
-const nodeSize = width < 600 ? 9 : 14;
-
-rect(
-  0,
-  0,
-  nodeSize,
-  nodeSize
-);
+  rect(
+    0,
+    0,
+    14,
+    14
+  );
 
 
   pop();
@@ -1612,13 +1606,11 @@ rect(
   fill(TEXT_COLOR);
 
 
-const labelOffset = width < 600 ? 15 : 22;
-
-text(
-  "Pua",
-  x + labelOffset,
-  y + 25
-);
+  text(
+    "Pua",
+    x + 22,
+    y + 25
+  );
 
 
   // --------------------------------
@@ -1633,13 +1625,11 @@ text(
   noStroke();
 
 
- const nodeSize = width < 600 ? 11 : 16;
-
-circle(
-  x + 8,
-  y + 50,
-  nodeSize
-);
+  circle(
+    x + 8,
+    y + 50,
+    16
+  );
 
 
   fill(TEXT_COLOR);
